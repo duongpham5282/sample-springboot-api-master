@@ -22,9 +22,9 @@ jobs:
       #     command: openssl enc -d -aes-256-ecb -md md5 -in src/main/resources/application-prod.properties.secrets -out src/main/resources/application-prod.properties -k $SECRETS_KEY
             
       # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - sample-springboot-api-{{ checksum "pom.xml" }}
+      # - restore_cache:
+      #     keys:
+      #     - sample-springboot-api-{{ checksum "pom.xml" }}
 
       - run: mvn dependency:go-offline
 
