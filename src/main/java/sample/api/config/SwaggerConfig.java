@@ -32,7 +32,7 @@ public class SwaggerConfig {
 
     private ApiInfo metadata() {
         return new ApiInfoBuilder()
-                .title("Stock API")
+                .title("Stock API v1")
                 .description("Sample Spring boot API")
                 .version("1.0.0")
                 .contact(new Contact("Zarin", "https://github.com/zarinlo", ""))
